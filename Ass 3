@@ -1,0 +1,19 @@
+n=int(input())
+A=[]
+sum=0
+for i in range(0,n):
+    l=[]
+    for j in range(0,n):
+        x=int(input())
+        l.append(x)
+    A.append(l)
+for i in range(n):
+    for j in range(n):
+        if i+j==n-1:
+            sum1=sum+A[i][j]
+    print(sum)
+    if i==j:
+        sum2=sum+A[i][j]
+        print(sum)
+    diff=sum2-sum1
+print(diff)
